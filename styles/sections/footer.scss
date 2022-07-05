@@ -1,0 +1,60 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
+footer {
+  max-width: 1260px;
+  margin: 0 auto;
+  background: $col-white;
+
+  .footer-menu {
+    padding: 45px;
+
+    ul {
+      @include reset-list;
+
+      li {
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        color: $col-green;
+        cursor: pointer;
+        text-align: left;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .footer-tags {
+    padding: 45px;
+
+    ul {
+      @include reset-list;
+
+      li {
+        padding: 4px 10px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        background: $col-grey-1;
+        border-radius: 12px;
+        display: inline-flex;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        @media (max-width: 800px) {
+          background: lime;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+         }
+}
+
